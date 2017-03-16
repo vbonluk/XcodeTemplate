@@ -7,6 +7,7 @@
 //
 
 ___IMPORTHEADER_cocoaTouchSubclass___
+#import "BaseViewController.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ : BaseViewController
 

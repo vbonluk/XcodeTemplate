@@ -46,7 +46,7 @@
 			<key>Default</key>
 			<string>NSObject</string>
 			<key>FallbackHeader</key>
-			<string>#import &quot;BaseViewController.h&quot;</string>
+			<string>#import &lt;UIKit/UIKit.h&gt;</string>
 			<key>Values</key>
 			<array>
 				<string>CustomView</string>

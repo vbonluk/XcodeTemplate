@@ -163,6 +163,14 @@
 
 ![](http://oapglm9vz.bkt.clouddn.com/1489636784.png )
 
+修改对应的CustomViewObjective-C和CustomViewXIBObjective-C两个文件夹内的___FILEBASENAME___.h文件。
+
+![](http://oapglm9vz.bkt.clouddn.com/1489644860.png )
+
+![](http://oapglm9vz.bkt.clouddn.com/1489644986.png )
+
+最后尝试创建。可以了。
+
 ![](http://oapglm9vz.bkt.clouddn.com/1489636816.png )
 
 ### 写在最后
