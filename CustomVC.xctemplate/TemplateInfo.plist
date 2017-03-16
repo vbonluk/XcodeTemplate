@@ -49,10 +49,13 @@
 			<string>#import &quot;BaseViewController.h&quot;</string>
 			<key>Values</key>
 			<array>
+				<string>CustomView</string>
 				<string>CustomVC</string>
 			</array>
 			<key>Suffixes</key>
 			<dict>
+				<key>CustomView</key>
+				<string>View</string>
 				<key>CustomVC</key>
 				<string>ViewController</string>
 			</dict>
@@ -70,7 +73,7 @@
 			<dict>
 				<key>cocoaTouchSubclass</key>
 				<array>
-					<string>UIView</string>
+					<string>CustomView</string>
 					<string>CustomVC</string>
 				</array>
 			</dict>

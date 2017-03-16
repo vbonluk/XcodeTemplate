@@ -149,11 +149,21 @@
 
 ### 第5步
 
-这一步其实是关于UIView的Xib文件创建的设置。
+这一步其实是关于UIView的Xib文件创建的设置。(UIView的Xib关联)
 
-按照上面第4部说的，我们只需在TemplateInfo.plist文件的Options -> Item2 -> RequiredOptions -> cocoaTouchSubclass 新增一项 UIView就可以了。
+按照上面第4部说的，我们需要在TemplateInfo.plist文件的Options -> Item1 -> Values 新增一项 CustomView。
 
-![](http://oapglm9vz.bkt.clouddn.com/1489384042.png )
+然后
+
+在TemplateInfo.plist文件的Options -> Item1 -> Suffixes 新增一项 View。
+
+然后
+
+在TemplateInfo.plist文件的Options -> Item2 -> RequiredOptions -> cocoaTouchSubclass 新增一项 UIView。
+
+![](http://oapglm9vz.bkt.clouddn.com/1489636784.png )
+
+![](http://oapglm9vz.bkt.clouddn.com/1489636816.png )
 
 ### 写在最后
 
