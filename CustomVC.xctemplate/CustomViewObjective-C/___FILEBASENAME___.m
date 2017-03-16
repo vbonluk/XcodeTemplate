@@ -11,11 +11,22 @@
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
 
-- (void)awakeFromNib{
-    [super awakeFromNib];
+- (id)initWithFrame:(CGRect)frame{
+    if ((self = [super initWithFrame:frame])) {
+        
+        
+        
+    }
+    
+    return self;
+}
+
+- (void)layoutSubviews{
+    [super layoutSubviews];
     
     
 }
+
 
 
 
