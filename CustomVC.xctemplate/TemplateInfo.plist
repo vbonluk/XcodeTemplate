@@ -49,11 +49,17 @@
 			<string>#import &lt;UIKit/UIKit.h&gt;</string>
 			<key>Values</key>
 			<array>
+				<string>Container</string>
+				<string>CustomViewExample</string>
 				<string>CustomView</string>
 				<string>CustomVC</string>
 			</array>
 			<key>Suffixes</key>
 			<dict>
+				<key>Container</key>
+				<string>Container</string>
+				<key>CustomViewExample</key>
+				<string>View</string>
 				<key>CustomView</key>
 				<string>View</string>
 				<key>CustomVC</key>
@@ -73,6 +79,7 @@
 			<dict>
 				<key>cocoaTouchSubclass</key>
 				<array>
+					<string>CustomViewExample</string>
 					<string>CustomView</string>
 					<string>CustomVC</string>
 				</array>
