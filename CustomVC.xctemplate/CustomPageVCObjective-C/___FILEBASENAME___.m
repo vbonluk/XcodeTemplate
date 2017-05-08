@@ -7,6 +7,7 @@
 //
 
 #import "___FILEBASENAME___.h"
+#import "UITableView+FDTemplateLayoutCell.h"
 
 @interface ___FILEBASENAMEASIDENTIFIER___ ()
 
@@ -32,10 +33,9 @@
     
     self.view.backgroundColor = backgroundcolor;
     
-    NSString *token=[[NSUserDefaults standardUserDefaults] objectForKey:AGENT_TOKEN];
+#warning 注意编写这里
+    [self.dataTableView registerNib:[UINib nibWithNibName:@"NewHouseCell" bundle:nil] forCellReuseIdentifier:@"NewHouseCell"];
     
-    _mainRequestUrl = [NSString stringWithFormat:@""];
-    [self get:_mainRequestUrl params:nil dialog:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,6 +61,40 @@
 #pragma mark - Other Method
 - (void)goBack{
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - tableView dataSources && delegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
+    return self.paginator.results.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;{
+    static NSString *cellID = @"NewHouseCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"NewHouseCell" owner:self options:nil] lastObject];
+    }
+    
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;{
+    return [tableView fd_heightForCellWithIdentifier:@"NewHouseCell" configuration:^(UITableViewCell* cell) {
+        
+    }];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - fetchResultsWithPage
+- (void)fetchResultsWithPage:(NSInteger)page pageSize:(NSInteger)pageSize{
+    NSString *token=[[NSUserDefaults standardUserDefaults] objectForKey:AGENT_TOKEN];
+    
+    _mainRequestUrl = [NSString stringWithFormat:@""];
+    [self get:_mainRequestUrl params:nil dialog:NO];
 }
 
 #pragma mark - callback delegate

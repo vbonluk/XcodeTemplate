@@ -10,6 +10,8 @@ ___IMPORTHEADER_cocoaTouchSubclass___
 
 #import "ViewDesignable_OC.h"
 
+//记得 因为使用了 Tap Guesture 所以 loadNibNamed 方法要用firstObject，因为lastObject是Tap Guesture
+
 @interface ___FILEBASENAMEASIDENTIFIER___ : UIView
 
 

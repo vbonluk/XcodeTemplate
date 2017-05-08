@@ -49,6 +49,8 @@
 			<string>#import &lt;UIKit/UIKit.h&gt;</string>
 			<key>Values</key>
 			<array>
+				<string>VBModel</string>
+				<string>CustomPageVC</string>
 				<string>Container</string>
 				<string>CustomViewExample</string>
 				<string>CustomView</string>
@@ -56,6 +58,10 @@
 			</array>
 			<key>Suffixes</key>
 			<dict>
+				<key>VBModel</key>
+				<string>Model</string>
+				<key>CustomPageVC</key>
+				<string>ViewController</string>
 				<key>Container</key>
 				<string>Container</string>
 				<key>CustomViewExample</key>

@@ -23,7 +23,7 @@
     
     //设置标题栏
     BJYNavTitleLabel *title = [[BJYNavTitleLabel alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-    title.text = XFJLocalizedString(@"标题") ;
+    title.text = [self translationToString:@""] ;
     self.navigationItem.titleView= title;
     
     BJYButton *backBtn = [[BJYButton alloc] initWithBJYButtonType:BJYButtonTypeBack];
@@ -34,6 +34,8 @@
     
     NSString *token=[[NSUserDefaults standardUserDefaults] objectForKey:AGENT_TOKEN];
     
+    _mainRequestUrl = [NSString stringWithFormat:@""];
+    [self get:_mainRequestUrl params:nil dialog:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
