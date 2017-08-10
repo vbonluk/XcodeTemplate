@@ -63,6 +63,23 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)inigPageView{
+    
+    
+    
+    
+    
+    [self getData];
+}
+
+- (void)getData{
+    
+}
+
+- (void)loadDataWithPageView{
+    
+}
+
 #pragma mark - callback delegate
 - (void)callbackSuccess:(NSString *)url data:(id)extendData{
     dispatch_async(dispatch_get_main_queue(), ^{

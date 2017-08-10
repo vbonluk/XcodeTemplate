@@ -63,6 +63,23 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)inigPageView{
+    
+    
+    
+    
+    
+    [self getData];
+}
+
+- (void)getData{
+    
+}
+
+- (void)loadDataWithPageView{
+    
+}
+
 #pragma mark - tableView dataSources && delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;{
     return self.paginator.results.count;
