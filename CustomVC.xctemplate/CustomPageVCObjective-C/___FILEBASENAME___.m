@@ -59,10 +59,10 @@
 }
 
 #pragma mark - Other Method
-- (void)goBack{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 
+/**
+ *  初始化页面
+ */
 - (void)inigPageView{
     
     
@@ -71,11 +71,15 @@
     
     [self getData];
 }
-
+/**
+ *  请求数据
+ */
 - (void)getData{
     
 }
-
+/**
+ *  加载数据到页面
+ */
 - (void)loadDataWithPageView{
     
 }
