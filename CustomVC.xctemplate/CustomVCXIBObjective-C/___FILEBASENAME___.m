@@ -32,10 +32,7 @@
     
     self.view.backgroundColor = backgroundcolor;
     
-    NSString *token=[[NSUserDefaults standardUserDefaults] objectForKey:AGENT_TOKEN];
-    
-    _mainRequestUrl = [NSString stringWithFormat:@""];
-    [self get:_mainRequestUrl params:nil dialog:NO];
+    [self initPageView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -63,7 +60,7 @@
 /**
  *  初始化页面
  */
-- (void)inigPageView{
+- (void)initPageView{
     
     
     
@@ -75,7 +72,10 @@
  *  请求数据
  */
 - (void)getData{
+    NSString *token=[[NSUserDefaults standardUserDefaults] objectForKey:AGENT_TOKEN];
     
+    _mainRequestUrl = [NSString stringWithFormat:@""];
+    [self get:_mainRequestUrl params:nil dialog:NO];
 }
 /**
  *  加载数据到页面

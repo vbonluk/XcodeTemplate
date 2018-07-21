@@ -36,7 +36,7 @@
 #warning 注意编写这里
     [self.dataTableView registerNib:[UINib nibWithNibName:@"NewHouseCell" bundle:nil] forCellReuseIdentifier:@"NewHouseCell"];
     
-    [self inigPageView];
+    [self initPageView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -64,7 +64,7 @@
 /**
  *  初始化页面
  */
-- (void)inigPageView{
+- (void)initPageView{
     
     
     
